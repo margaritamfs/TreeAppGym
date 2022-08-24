@@ -7,6 +7,6 @@ namespace TreeAppGym.App.Dominio
        public int Id {get; set;}
        public Categoria Categoria {get; set;}
        public String Descripcion {get; set;}
-       public Object Imagen {get; set;}
+       public String Imagen {get; set;}
     }
 }

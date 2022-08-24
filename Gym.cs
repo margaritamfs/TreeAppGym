@@ -2,7 +2,7 @@ using System;
 
 namespace TreeAppGym.App.Dominio
 {
-    public class TreeAppGym
+    public class Gym
     {
         public int Id {get; set;} 
         public int IdCliente {get; set;}

@@ -1,0 +1,4 @@
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.0\TreeAppGym.App.Persistencia.csprojAssemblyReference.cache
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.0\TreeAppGym.App.Persistencia.AssemblyInfoInputs.cache
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.0\TreeAppGym.App.Persistencia.AssemblyInfo.cs
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.0\TreeAppGym.App.Persistencia.csproj.CoreCompileInputs.cache

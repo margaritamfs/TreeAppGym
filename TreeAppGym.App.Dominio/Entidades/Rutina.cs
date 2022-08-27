@@ -7,8 +7,8 @@ using System;
         {
             public int Id {get; set;} 
             public Categoria Categoria {get; set;}
-            public String Descripcion {get; set;}
-            public Object Imagen {get; set;}
-            public Object Video {get; set;}
+            public string Descripcion {get; set;}
+            public string Imagen {get; set;}
+            public string Video {get; set;}
         }
     }

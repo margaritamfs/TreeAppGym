@@ -1,0 +1,9 @@
+D:\TreeAppGym1\treeAppGym.App\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.csprojAssemblyReference.cache
+D:\TreeAppGym1\treeAppGym.App\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.AssemblyInfoInputs.cache
+D:\TreeAppGym1\treeAppGym.App\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.AssemblyInfo.cs
+D:\TreeAppGym1\treeAppGym.App\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.csproj.CoreCompileInputs.cache
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Dominio\bin\Debug\netstandard2.1\TreeAppGym.App.Dominio.deps.json
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Dominio\bin\Debug\netstandard2.1\TreeAppGym.App.Dominio.dll
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Dominio\bin\Debug\netstandard2.1\TreeAppGym.App.Dominio.pdb
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.dll
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.pdb

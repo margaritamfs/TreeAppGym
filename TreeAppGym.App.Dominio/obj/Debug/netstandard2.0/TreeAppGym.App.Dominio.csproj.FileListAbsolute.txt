@@ -1,0 +1,4 @@
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Dominio\obj\Debug\netstandard2.0\TreeAppGym.App.Dominio.csprojAssemblyReference.cache
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Dominio\obj\Debug\netstandard2.0\TreeAppGym.App.Dominio.AssemblyInfoInputs.cache
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Dominio\obj\Debug\netstandard2.0\TreeAppGym.App.Dominio.AssemblyInfo.cs
+D:\TreeAppGym1\TreeAppGym.App\TreeAppGym.App.Dominio\obj\Debug\netstandard2.0\TreeAppGym.App.Dominio.csproj.CoreCompileInputs.cache

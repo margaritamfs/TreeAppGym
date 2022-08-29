@@ -5,7 +5,7 @@ namespace TreeAppGym.App.Dominio
     public class Gym
     {
         public int Id {get; set;} 
-        public Clientes Clientes {get; set;}
+        public Cliente Cliente {get; set;}
         public Rutina Rutina {get; set;}
         public PlanNutricional PlanNutricional {get; set;}
         public DateTime Fecha {get; set;}

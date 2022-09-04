@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj": {}
+    "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj": {}
   },
   "projects": {
-    "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj": {
+    "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj",
+        "projectUniqueName": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj",
         "projectName": "TreeAppGym.App.Consola",
-        "projectPath": "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj",
-        "packagesPath": "C:\\Users\\olgui\\.nuget\\packages\\",
-        "outputPath": "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Consola\\obj\\",
+        "projectPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Consola\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\olgui\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -24,9 +24,10 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj": {
-                "projectPath": "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj"
+              "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj": {
+                "projectPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj"
               }
             }
           }
@@ -39,6 +40,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -53,7 +55,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -62,21 +65,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.422\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj": {
+    "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj",
+        "projectUniqueName": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj",
         "projectName": "TreeAppGym.App.Dominio",
-        "projectPath": "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\olgui\\.nuget\\packages\\",
-        "outputPath": "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Dominio\\obj\\",
+        "projectPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\olgui\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -86,6 +89,7 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -97,13 +101,15 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -112,21 +118,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.422\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj": {
+    "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj",
+        "projectUniqueName": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj",
         "projectName": "TreeAppGym.App.Persistencia",
-        "projectPath": "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj",
-        "packagesPath": "C:\\Users\\olgui\\.nuget\\packages\\",
-        "outputPath": "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Persistencia\\obj\\",
+        "projectPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj",
+        "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+        "outputPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\olgui\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -136,9 +142,10 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {
-              "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj": {
-                "projectPath": "D:\\TreeAppGym1\\TreeAppGym.App\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj"
+              "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj": {
+                "projectPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj"
               }
             }
           }
@@ -151,6 +158,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -179,7 +187,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -188,7 +197,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.422\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

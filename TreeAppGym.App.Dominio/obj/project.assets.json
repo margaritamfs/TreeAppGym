@@ -8,19 +8,19 @@
     ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "C:\\Users\\marga\\.nuget\\packages\\": {}
+    "C:\\Users\\gabri\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marga\\dllo\\net\\TreeAppGym\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj",
+      "projectUniqueName": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj",
       "projectName": "TreeAppGym.App.Dominio",
-      "projectPath": "C:\\Users\\marga\\dllo\\net\\TreeAppGym\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj",
-      "packagesPath": "C:\\Users\\marga\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marga\\dllo\\net\\TreeAppGym\\TreeAppGym.App.Dominio\\obj\\",
+      "projectPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
+      "outputPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\marga\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"

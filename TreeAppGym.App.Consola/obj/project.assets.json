@@ -6040,19 +6040,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\gabri\\.nuget\\packages\\": {}
+    "C:\\Users\\marga\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj",
+      "projectUniqueName": "C:\\Users\\marga\\dllo\\net\\TreeAppGym\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj",
       "projectName": "TreeAppGym.App.Consola",
-      "projectPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj",
-      "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Consola\\obj\\",
+      "projectPath": "C:\\Users\\marga\\dllo\\net\\TreeAppGym\\TreeAppGym.App.Consola\\TreeAppGym.App.Consola.csproj",
+      "packagesPath": "C:\\Users\\marga\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\marga\\dllo\\net\\TreeAppGym\\TreeAppGym.App.Consola\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\gabri\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\marga\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -6064,8 +6064,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj": {
-              "projectPath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj"
+            "C:\\Users\\marga\\dllo\\net\\TreeAppGym\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\marga\\dllo\\net\\TreeAppGym\\TreeAppGym.App.Persistencia\\TreeAppGym.App.Persistencia.csproj"
             }
           }
         }

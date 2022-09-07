@@ -1,0 +1,17 @@
+﻿@page
+@model TreeAppGym.App.Frontend.Pages.ListModel
+@{
+}
+<h1>Listas de Clientes desde Base de Datos</h1>
+<table class="table">
+    @foreach (var cliente in Model.Clientes)
+    {
+        <tr>
+            <td>@cliente.Nombres</td>
+            <td>@cliente.Apellidos</td>
+            <td>@cliente.Email</td>
+            <td>@cliente.Edad</td>
+            <td>@cliente.Direccion</td>
+        </tr>
+    }
+</table>

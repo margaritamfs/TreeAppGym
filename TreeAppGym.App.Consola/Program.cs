@@ -17,10 +17,10 @@ namespace TreeAppGym.App.Consola
             //CRUD Clase Cliente
             var cliente = crearCliente();
             Console.WriteLine("Cliente Creado..");
-            ConsultarCliente(cliente.Id);
-            ConsultarClientes();
-            ActualizarCliente(cliente);
-            EliminarCliente(cliente.Id);
+           // ConsultarCliente(cliente.Id);
+           //ConsultarClientes();
+           // ActualizarCliente(cliente);
+          //  EliminarCliente(cliente.Id);
 
         }
         //Clase específica para crear el objeto PlanNutricional
@@ -39,12 +39,12 @@ namespace TreeAppGym.App.Consola
         {
             var cliente = new Cliente
             {
-                Nombres = "Luis",
-                Apellidos = "Soler",
-                Email = "luis.soler@test.com00",
+                Nombres = "Nario",
+                Apellidos = "Quintana",
+                Email = "Nario.Quintana@test.com00",
                 Edad = 25,
-                Telefono = "3013013011",
-                Direccion = "Av Regional #12-34",
+                Telefono = "3043043041",
+                Direccion = "Av Regional #13-33",
                 Contraseña = "a123&1",
                 Genero = Genero.masculino
                 

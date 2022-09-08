@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tt+bxjAZHw6DdoiYmUyFCaaQBqAfO1vQze5TbZCmNw3vUddwr4h5moUO2Ln70lykNWJDlR3zF1bYYe+vGxOHfQ==",
+  "dgSpecHash": "LO5QsqFqIww1l5Bjo38xCswuGLW4XfXFj5PQf9etqPXWc8zRJ/vLATEk51Q9jGM7uSSxrAZP0a26PNHznQ7J2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marga\\dllo\\net\\TreeAppGym\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj",
+  "projectFilePath": "C:\\DlloNet\\TreeAppGym\\TreeAppGym.App.Dominio\\TreeAppGym.App.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

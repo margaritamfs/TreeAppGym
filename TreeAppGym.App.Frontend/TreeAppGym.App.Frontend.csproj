@@ -2,12 +2,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TreeAppGym.App.Persistencia\TreeAppGym.App.Persistencia.csproj" />
+    <ProjectReference Include="..\TreeAppGym.App.Dominio\TreeAppGym.App.Dominio.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
 </Project>

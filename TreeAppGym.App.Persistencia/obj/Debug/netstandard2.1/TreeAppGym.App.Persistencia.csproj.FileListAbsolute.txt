@@ -28,11 +28,10 @@ C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\bin\Debug\netstandard2.1\TreeA
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\bin\Debug\netstandard2.1\TreeAppGym.App.Persistencia.pdb
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\bin\Debug\netstandard2.1\TreeAppGym.App.Dominio.dll
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\bin\Debug\netstandard2.1\TreeAppGym.App.Dominio.pdb
-C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.csproj.AssemblyReference.cache
-C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.AssemblyInfoInputs.cache
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.AssemblyInfo.cs
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.csproj.CoreCompileInputs.cache
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.csproj.CopyComplete
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.dll
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.pdb
+C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.csprojAssemblyReference.cache

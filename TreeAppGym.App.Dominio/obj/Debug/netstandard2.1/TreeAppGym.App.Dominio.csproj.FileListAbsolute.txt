@@ -20,10 +20,9 @@ C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Dominio\bin\Debug\netstandard2
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Dominio\bin\Debug\netstandard2.1\TreeAppGym.App.Dominio.deps.json
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Dominio\bin\Debug\netstandard2.1\TreeAppGym.App.Dominio.dll
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Dominio\bin\Debug\netstandard2.1\TreeAppGym.App.Dominio.pdb
-C:\DlloNet\TreeAppGym\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.csproj.AssemblyReference.cache
-C:\DlloNet\TreeAppGym\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.AssemblyInfoInputs.cache
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.AssemblyInfo.cs
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.csproj.CoreCompileInputs.cache
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.dll
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.pdb
+C:\DlloNet\TreeAppGym\TreeAppGym.App.Dominio\obj\Debug\netstandard2.1\TreeAppGym.App.Dominio.csprojAssemblyReference.cache

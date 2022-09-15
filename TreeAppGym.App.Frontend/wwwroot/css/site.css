@@ -61,6 +61,10 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  margin: 0px;
+  font-family: "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif", "Gill Sans", "Gill Sans MT";
+	font-size: 15px;
+	background-color: gainsboro;
 }
 .footer {
   position: absolute;
@@ -68,4 +72,140 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+/* estilos Gym House */
+.gym_encabezado{
+	background-color: #b4c0cc;
+	padding-bottom: 10px;
+	padding-top: 0px;
+	width: 80%;
+	height: 115px;
+	margin: auto;
+}
+
+.gym_logo{
+	background-image: url("../img/logo.png");
+	width: 30%;
+	height: 127px;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.gym_menu{
+	width: 70%;
+	height: 125px;
+	float: right;
+	text-align: right;
+	background-color: transparent;
+}
+
+.gym_bienvenida{
+	padding-top: 20px;
+	padding-right: 20px;
+	text-align: right;
+	font-size: 20px;
+	font-style: bold;
+}
+
+.gym_menu_ppal{
+	text-align: right;
+	padding-top: 15px;
+	padding-right: 20px;
+	text-align: right;
+	font-size: 15px;
+}
+
+.gym_vinculo{
+	text-decoration: none;
+}
+
+a:hover.gym_vinculo{
+	text-decoration: none;
+	color: white;
+	cursor: pointer;
+}
+
+.gym_contenido{
+	width: 80%;
+	margin: auto;
+	background-color: white;
+	margin-top: 3px;
+	margin-bottom: 5px;
+}
+
+.gym_contenido2{
+	padding: 10px;
+	margin: auto;
+}
+
+.gym_footer{
+	background-color: #b4c0cc;
+	padding-bottom: 10px;
+	padding-top: 0px;
+	width: 80%;
+	margin: auto;
+}
+
+.gym_textfooter{
+	padding: 10px;
+	margin: auto;
+	font-size: 12px;
+	text-align: center;
+}
+
+.gym_formulario{
+	padding-left: 30%;
+	padding-top: 20px;
+}
+
+.gym_contenido_registro{
+	background-image: url("../img/imagen_registro.png");
+	background-position: left;
+	background-repeat: no-repeat;
+	width: 100%;
+	margin: auto;
+ 	height: 1000px;
+}
+
+.gym_textoEncabezado{
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.gym_derecha{
+	width: 30%;
+	float: left;
+	height: 400px;
+}
+
+.gym_izquierda{
+	width: 70%;
+	float: right;
+	height: 400px;
+}
+
+.gym_label_table{
+	text-align: right;
+	padding-right: 5px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.gym_campo_tb{
+	text-align: left;
+	padding-right: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.gym_campo_table{
+	padding: 3px;
+	border: #E6663A;
+	border-radius: 6px;
+	background-color: #f2f6f9;
+	margin-top: 3px;
+	margin-left: 10px;
+	margin-bottom: 3px;
+	height: 25px;
+	color: #340a6b;
 }

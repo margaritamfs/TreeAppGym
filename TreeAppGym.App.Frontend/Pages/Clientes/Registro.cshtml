@@ -1,0 +1,84 @@
+﻿@page
+@model TreeAppGym.App.Frontend.Pages.RegistroModel
+@{
+}
+<div class="gym_contenido">
+    <div class="gym_contenido2">
+        <div class="gym_contenido_registro">
+
+            <div class="gym_formulario">
+
+                <div class="gym_textoEncabezado">Para registrarte en nuestra plataforma debes llenar el siguiente
+                    formulario. (Los campos con * son obligatorios)</div>
+
+                <div>
+                    <form method="post">
+                        <div class="gym_derecha">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="gym_label_table">Nombre*</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Apellidos*</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Edad*</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Dirección</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">No. Celular</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">E_mail*</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Contraseña*</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                        <div class="gym_izquierda">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="gym_campo_tb"><input asp-for="Cliente.Nombres" class="gym_campo_table" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Apellidos" class="gym_campo_table" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Edad" class="gym_campo_table" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Direccion" class="gym_campo_table" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Telefono" class="gym_campo_table" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Email" class="gym_campo_table" type="email"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Contraseña" class="gym_campo_table" type="text"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_campo_tb"><input type="submit"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

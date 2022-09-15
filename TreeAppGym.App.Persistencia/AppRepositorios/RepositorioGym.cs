@@ -16,25 +16,25 @@ namespace TreeAppGym.App.Persistencia
 
         public Gym CrearGym(Gym gym)
         {
-            var gymAdicionado = _appContext.Gym.Add(gym);
+            var gymAdicionado = _appContext.Gyms.Add(gym);
             _appContext.SaveChanges();            
             return gymAdicionado.Entity;           
         }
        
         public Gym ConsultarGym(int idGym)
         {
-            return _appContext.Gym.FirstOrDefault(p => p.Id == idGym);        
+            return _appContext.Gyms.FirstOrDefault(p => p.Id == idGym);        
         }
 
         public IEnumerable<Gym> ConsultarGyms()
         {
-            return _appContext.Gym;
+            return _appContext.Gyms;
         }
 
         public Gym ActualizarGym(Gym gym)
         {
 
-            var gymEncontrado = _appContext.Gym.FirstOrDefault(p => p.Id == gym.Id);
+            var gymEncontrado = _appContext.Gyms.FirstOrDefault(p => p.Id == gym.Id);
             if (gym != null)
             {
                 gymEncontrado.Id = gym.Id;
@@ -53,10 +53,10 @@ namespace TreeAppGym.App.Persistencia
 
         public void EliminarGym(int idGym)
         {
-            var gymEncontrado = _appContext.Gym.FirstOrDefault(p => p.Id == idGym);
+            var gymEncontrado = _appContext.Gyms.FirstOrDefault(p => p.Id == idGym);
             if (gymEncontrado == null)
             return;
-            _appContext.Gym.Remove(gymEncontrado);
+            _appContext.Gyms.Remove(gymEncontrado);
             _appContext.SaveChanges();
         }
 

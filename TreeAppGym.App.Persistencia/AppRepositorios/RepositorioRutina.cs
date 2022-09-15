@@ -19,7 +19,7 @@ namespace TreeAppGym.App.Persistencia
 
         public Rutina CrearRutina(Rutina Rutina)
         {
-            var RutinaAdicionado = _appContext.Rutina.Add(Rutina); 
+            var RutinaAdicionado = _appContext.Rutinas.Add(Rutina); 
             _appContext.SaveChanges();
             // aqui guardo los cambios en la BD
             return RutinaAdicionado.Entity;
@@ -28,19 +28,19 @@ namespace TreeAppGym.App.Persistencia
 
         public Rutina ConsultarRutina(int idRutina)
         {
-            return _appContext.Rutina.FirstOrDefault(r => r.Id == idRutina);  
+            return _appContext.Rutinas.FirstOrDefault(r => r.Id == idRutina);  
             //doble == porque estoy comparando enteros
         }
 
         public IEnumerable<Rutina> ConsultarRutina()
         {
-            return _appContext.Rutina;
+            return _appContext.Rutinas;
         }
 
         public Rutina ActualizarRutina(Rutina Rutina)
         {
 
-            var RutinaEncontrado = _appContext.Rutina.FirstOrDefault(r => r.Id == Rutina.Id);
+            var RutinaEncontrado = _appContext.Rutinas.FirstOrDefault(r => r.Id == Rutina.Id);
             if (RutinaEncontrado != null)
             {
                 RutinaEncontrado.Categoria = Rutina.Categoria;
@@ -55,10 +55,10 @@ namespace TreeAppGym.App.Persistencia
 
         public void EliminarRutina(int idRutina)
         {
-            var RutinaEncontrado = _appContext.Rutina.FirstOrDefault(r => r.Id == idRutina);
+            var RutinaEncontrado = _appContext.Rutinas.FirstOrDefault(r => r.Id == idRutina);
             if (RutinaEncontrado == null)
             return;
-            _appContext.Rutina.Remove(RutinaEncontrado);
+            _appContext.Rutinas.Remove(RutinaEncontrado);
             _appContext.SaveChanges();
         }
 

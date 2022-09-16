@@ -3,73 +3,53 @@
 @{
 }
 <div class="gym_contenido">
-    <div class="gym_contenido2">
+    
         <div class="gym_contenido_registro">
 
             <div class="gym_formulario">
 
                 <div class="gym_textoEncabezado">Para registrarte en nuestra plataforma debes llenar el siguiente
-                    formulario. (Los campos con * son obligatorios)</div>
+                    formulario. <br>(Los campos con * son obligatorios)<p><p><p></div>
 
                 <div>
                     <form method="post">
-                        <div class="gym_derecha">
+                        <div class="gym_espacio_campos">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
                                     <tr>
-                                        <td class="gym_label_table">Nombre*</td>
+                                        <td class="gym_label_table">Nombre*</td><td class="gym_zona_campo"><input asp-for="Cliente.Nombres" class="gym_campo_table" type="text" size="40px" maxlength="50"></td>
                                     </tr>
                                     <tr>
-                                        <td class="gym_label_table">Apellidos*</td>
+                                        <td class="gym_label_table">Apellidos*</td><td class="gym_zona_campo"><input  asp-for="Cliente.Apellidos" class="gym_campo_table" type="text" size="40px" maxlength="50"></td>
                                     </tr>
                                     <tr>
-                                        <td class="gym_label_table">Edad*</td>
+                                        <td class="gym_label_table">Genero*</td><td class="gym_zona_campo"><input  asp-for="Cliente.Genero" class="gym_campo_table" type="text">
                                     </tr>
                                     <tr>
-                                        <td class="gym_label_table">Dirección</td>
+                                        <td class="gym_label_table">Edad*</td><td class="gym_zona_campo"><input  asp-for="Cliente.Edad" class="gym_campo_table" type="text" size="15px" maxlength="3"></td>
                                     </tr>
                                     <tr>
-                                        <td class="gym_label_table">No. Celular</td>
+                                        <td class="gym_label_table">Dirección</td><td class="gym_zona_campo"><input  asp-for="Cliente.Direccion" class="gym_campo_table" type="text" size="40px" maxlength="50"></td>
                                     </tr>
                                     <tr>
-                                        <td class="gym_label_table">E_mail*</td>
+                                        <td class="gym_label_table">Celular</td><td class="gym_zona_campo"><input  asp-for="Cliente.Telefono" class="gym_campo_table" type="text" size="20px" maxlength="20"></td>
                                     </tr>
                                     <tr>
-                                        <td class="gym_label_table">Contraseña*</td>
+                                        <td class="gym_label_table">E_mail</td><td class="gym_zona_campo"><input  asp-for="Cliente.Email" class="gym_campo_table" type="email" size="40px" maxlength="50"></td>
                                     </tr>
                                     <tr>
-                                        <td class="gym_label_table"></td>
+                                        <td class="gym_label_table">Asignar contraseña</td><td class="gym_zona_campo"><input  asp-for="Cliente.Contraseña" class="gym_campo_table" type="password" size="20px" maxlength="20"></td>
                                     </tr>
-                                </tbody>
-                            </table>
+                                    <tr>
+                                        <td class="gym_label_table">Confirmar contraseña</td><td class="gym_zona_campo"><input  asp-for="Cliente.Contraseña" class="gym_campo_table" type="password" size="20px" maxlength="20"></td>
+                                    </tr>
 
-                        </div>
-                        <div class="gym_izquierda">
-                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                                <tbody>
                                     <tr>
-                                        <td class="gym_campo_tb"><input asp-for="Cliente.Nombres" class="gym_campo_table" type="text"></td>
+                                        <td class="gym_label_table"></td><td class="gym_zona_campo"><p></p></td>
                                     </tr>
+
                                     <tr>
-                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Apellidos" class="gym_campo_table" type="text"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Edad" class="gym_campo_table" type="text"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Direccion" class="gym_campo_table" type="text"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Telefono" class="gym_campo_table" type="text"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Email" class="gym_campo_table" type="email"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="gym_campo_tb"><input  asp-for="Cliente.Contraseña" class="gym_campo_table" type="text"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="gym_campo_tb"><input type="submit"></td>
+                                        <td class="gym_label_table"></td><td class="gym_zona_campo"><input type="submit" class="gym_boton" value="Enviar datos"></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -80,5 +60,5 @@
 
             </div>
         </div>
-    </div>
+    
 </div>

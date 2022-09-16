@@ -1,85 +1,18 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
+﻿/* estilos Gym House */
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
-
-/* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
-}
-
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-  margin: 0px;
-  font-family: "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif", "Gill Sans", "Gill Sans MT";
+body{
+	margin: 0px;
+	font-family: "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif", "Gill Sans", "Gill Sans MT";
 	font-size: 15px;
 	background-color: gainsboro;
 }
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
-}
-/* estilos Gym House */
+
 .gym_encabezado{
 	background-color: #b4c0cc;
 	padding-bottom: 10px;
 	padding-top: 0px;
 	width: 80%;
-	height: 115px;
+	height: 135px;
 	margin: auto;
 }
 
@@ -117,9 +50,21 @@ body {
 
 .gym_vinculo{
 	text-decoration: none;
+	color: #FFF;
+}
+
+a.gym_vinculo{
+	text-decoration: none;
+	color: #FFF;
 }
 
 a:hover.gym_vinculo{
+	text-decoration: none;
+	color: rgb(219, 215, 215);
+	cursor: pointer;
+}
+
+a:active.gym_vinculo{
 	text-decoration: none;
 	color: white;
 	cursor: pointer;
@@ -128,14 +73,23 @@ a:hover.gym_vinculo{
 .gym_contenido{
 	width: 80%;
 	margin: auto;
-	background-color: white;
 	margin-top: 3px;
-	margin-bottom: 5px;
+	background-color: #FFF;
+	overflow-y: auto;
+    overflow-x: hidden;
+	height: 100%;
+	clear: both;
 }
 
-.gym_contenido2{
-	padding: 10px;
+.gym_contenido_registro{
+	padding-top: 30px;
+	background-image: url("../img/imagen_registro.png");
+	background-position: left;
+	background-repeat: no-repeat;
 	margin: auto;
+	height: 750px;
+	overflow-y: auto;
+	padding-bottom: 30px;
 }
 
 .gym_footer{
@@ -144,6 +98,9 @@ a:hover.gym_vinculo{
 	padding-top: 0px;
 	width: 80%;
 	margin: auto;
+	margin-bottom: 5px;
+	clear: both;
+	margin-top: 3px;
 }
 
 .gym_textfooter{
@@ -151,6 +108,7 @@ a:hover.gym_vinculo{
 	margin: auto;
 	font-size: 12px;
 	text-align: center;
+	padding-top: 20px;
 }
 
 .gym_formulario{
@@ -158,54 +116,47 @@ a:hover.gym_vinculo{
 	padding-top: 20px;
 }
 
-.gym_contenido_registro{
-	background-image: url("../img/imagen_registro.png");
-	background-position: left;
-	background-repeat: no-repeat;
-	width: 100%;
-	margin: auto;
- 	height: 1000px;
-}
 
 .gym_textoEncabezado{
 	text-align: center;
 	padding-bottom: 15px;
 }
 
-.gym_derecha{
-	width: 30%;
-	float: left;
-	height: 400px;
+.gym_espacio_campos{
+	width: 70%;
+	margin: auto;
 }
 
-.gym_izquierda{
-	width: 70%;
-	float: right;
-	height: 400px;
-}
 
 .gym_label_table{
 	text-align: right;
-	padding-right: 5px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.gym_campo_tb{
-	text-align: left;
-	padding-right: 5px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-right: 10px;
+	width: 30%;
+	height: 50px;
 }
 
 .gym_campo_table{
-	padding: 3px;
-	border: #E6663A;
-	border-radius: 6px;
-	background-color: #f2f6f9;
-	margin-top: 3px;
-	margin-left: 10px;
-	margin-bottom: 3px;
-	height: 25px;
-	color: #340a6b;
+	background-color: #ebebeb;
+	border: 1px solid transparent;
+	height: 30px;
+	border-radius: 8px;
+	color: #999;
+}
+
+.gym_bold{
+	font-weight: bold;
+	color: #7B3CBA;
+}
+
+.gym_zona_campo{
+	height: 50px;
+	text-align: left;
+}
+
+.gym_boton{
+	background-color: #b4c0cc;
+	padding-left: 30px;
+	padding-right: 30px;
+	border: #b4c0cc;
+	border: 1px solid;
 }

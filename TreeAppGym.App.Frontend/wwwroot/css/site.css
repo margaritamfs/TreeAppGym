@@ -133,6 +133,7 @@ a:active.gym_vinculo{
 	padding-right: 10px;
 	width: 30%;
 	height: 50px;
+	color: #000;
 }
 
 .gym_campo_table{
@@ -151,6 +152,7 @@ a:active.gym_vinculo{
 .gym_zona_campo{
 	height: 50px;
 	text-align: left;
+	color: #000;
 }
 
 .gym_boton{
@@ -159,4 +161,53 @@ a:active.gym_vinculo{
 	padding-right: 30px;
 	border: #b4c0cc;
 	border: 1px solid;
+}
+
+.gym_contenido_logeo{
+	padding-top: 80px;
+	background-image: url("../img/img_logeo.png");
+	background-position: left;
+	background-repeat: no-repeat;
+	margin: auto;
+	height: 750px;
+	overflow-y: auto;
+	padding-bottom: 30px;
+}
+
+.gym_zona_logeo{
+	background-color: #FFF;
+	opacity: 70%;
+	width: 50%;
+	margin: auto;
+	border-bottom: 2px #000;
+}
+
+.gym_titulo_logeo{
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	letter-spacing: 7px;
+}
+
+.gym_izq{
+	float: left;
+	width: 40%;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+}
+
+.gym_derch{
+	float: right;
+	width: 60%;
+	padding-top: 40px;
+	padding-bottom: 20px;
+	padding-right: 40px;
+}
+
+.gym_texto_corrido{
+	text-align: justify;
 }

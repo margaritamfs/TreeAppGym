@@ -1,10 +1,13 @@
 using System;
+using System.ComponentModel.DataAnnotations;
 namespace TreeAppGym.App.Dominio
 {
     public class Cliente
     {
       public int Id {get; set;}
+      [Required(ErrorMessage = "El campo es requerido"),StringLength(50)]
       public string Nombres {get; set;}
+      [Required(ErrorMessage = "El campo es requerido"),StringLength(50)]
       public string Apellidos {get; set;}
       public string Email {get; set;}
       public int Edad {get; set;}

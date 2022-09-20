@@ -15,8 +15,6 @@ C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Persistencia\bin\Debug\netstan
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Persistencia\bin\Debug\netstandard2.1\TreeAppGym.App.Persistencia.pdb
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Persistencia\bin\Debug\netstandard2.1\TreeAppGym.App.Dominio.dll
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Persistencia\bin\Debug\netstandard2.1\TreeAppGym.App.Dominio.pdb
-C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.csproj.AssemblyReference.cache
-C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.AssemblyInfoInputs.cache
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.AssemblyInfo.cs
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.csproj.CoreCompileInputs.cache
@@ -35,3 +33,4 @@ C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeA
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.dll
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.pdb
 C:\DlloNet\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.csprojAssemblyReference.cache
+C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Persistencia\obj\Debug\netstandard2.1\TreeAppGym.App.Persistencia.csprojAssemblyReference.cache

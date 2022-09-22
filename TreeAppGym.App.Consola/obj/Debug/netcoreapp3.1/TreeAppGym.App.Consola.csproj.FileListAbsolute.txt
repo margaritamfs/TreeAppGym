@@ -204,3 +204,4 @@ C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\obj\Debug\netcoreapp3.
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\obj\Debug\netcoreapp3.1\TreeAppGym.App.Consola.dll
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\obj\Debug\netcoreapp3.1\TreeAppGym.App.Consola.pdb
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\obj\Debug\netcoreapp3.1\TreeAppGym.App.Consola.genruntimeconfig.cache
+C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\obj\Debug\netcoreapp3.1\TreeAppGym.App.Consola.csprojAssemblyReference.cache

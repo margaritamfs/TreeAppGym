@@ -146,7 +146,7 @@ a:active.gym_vinculo{
 
 .gym_bold{
 	font-weight: bold;
-	color: #7B3CBA;
+	color: #FFF;
 }
 
 .gym_zona_campo{
@@ -205,9 +205,26 @@ a:active.gym_vinculo{
 	width: 60%;
 	padding-top: 40px;
 	padding-bottom: 20px;
-	padding-right: 40px;
-}
-
-.gym_texto_corrido{
+	padding-right: 100px;
 	text-align: justify;
 }
+
+.gym_espacioBotones{
+	width: 60%;
+	height: 50px;
+	text-align: center;
+	clear: both;
+	float: right;
+}
+
+.gym_textcentrado{
+	text-align: center;
+}
+
+.gym_text_border{
+	border: 1px #b4c0cc;
+	padding: 7px;
+	text-align: center;
+	margin: 15px;
+}
+

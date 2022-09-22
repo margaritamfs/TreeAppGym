@@ -42,11 +42,11 @@ namespace TreeAppGym.App.Persistencia
             {
                 clienteEncontrado.Nombres = cliente.Nombres;
                 clienteEncontrado.Apellidos = cliente.Apellidos;
-                clienteEncontrado.Email = cliente.Email;
+                //clienteEncontrado.Email = cliente.Email;
                 clienteEncontrado.Edad = cliente.Edad;
                 clienteEncontrado.Telefono = cliente.Telefono;
                 clienteEncontrado.Direccion = cliente.Direccion;
-                clienteEncontrado.Contraseña = cliente.Contraseña;
+                //clienteEncontrado.Contraseña = cliente.Contraseña;
                 clienteEncontrado.Genero = cliente.Genero;
                 _appContext.SaveChanges();
             }

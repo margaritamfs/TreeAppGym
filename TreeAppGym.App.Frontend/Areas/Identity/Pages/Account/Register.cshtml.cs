@@ -13,6 +13,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using TreeAppGym.App.Dominio;
+using TreeAppGym.App.Persistencia;
 
 namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
 {
@@ -23,6 +25,9 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+
+        //private readonly IRepositorioCliente _repoCliente;
+        private readonly IRepositorioCliente _repoCliente = new RepositorioCliente(new Persistencia.AppContext());
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
@@ -42,6 +47,9 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
         public string ReturnUrl { get; set; }
 
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
+
+        [BindProperty]
+        public Cliente cliente  { get; set; } 
 
         public class InputModel
         {
@@ -64,12 +72,14 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
+            cliente = new Cliente();
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
+            _repoCliente.CrearCliente(cliente);
             returnUrl = returnUrl ?? Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)

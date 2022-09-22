@@ -13,6 +13,36 @@
             <hr />
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form-group">
+                <label asp-for="cliente.Nombres"></label>
+                <input asp-for="cliente.Nombres" class="form-control" />
+                <span asp-validation-for="cliente.Nombres" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cliente.Apellidos"></label>
+                <input asp-for="cliente.Apellidos" class="form-control" />
+                <span asp-validation-for="cliente.Apellidos" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cliente.Genero"></label>
+                <input asp-for="cliente.Genero" class="form-control" />
+                <span asp-validation-for="cliente.Genero" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cliente.Edad"></label>
+                <input asp-for="cliente.Edad" class="form-control" />
+                <span asp-validation-for="cliente.Edad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cliente.Direccion"></label>
+                <input asp-for="cliente.Direccion" class="form-control" />
+                <span asp-validation-for="cliente.Direccion" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="cliente.Telefono"></label>
+                <input asp-for="cliente.Telefono" class="form-control" />
+                <span asp-validation-for="cliente.Telefono" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Input.Email"></label>
                 <input asp-for="Input.Email" class="form-control" />
                 <span asp-validation-for="Input.Email" class="text-danger"></span>

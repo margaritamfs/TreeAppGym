@@ -9,11 +9,11 @@ namespace TreeAppGym.App.Dominio
       public string Nombres {get; set;}
       [Required(ErrorMessage = "El campo es requerido"),StringLength(50)]
       public string Apellidos {get; set;}
-      public string Email {get; set;}
+     // public string Email {get; set;}
       public int Edad {get; set;}
       public string Telefono {get; set;}
       public string Direccion {get; set;}
-      public string Contraseña {get; set;}
+      //public string Contraseña {get; set;}
       public Genero Genero {get; set;}
 
     }

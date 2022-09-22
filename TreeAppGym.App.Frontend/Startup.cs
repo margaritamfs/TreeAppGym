@@ -26,6 +26,7 @@ namespace TreeAppGym.App.Frontend
         {
             services.AddRazorPages();
             services.AddDbContext<TreeAppGym.App.Persistencia.AppContext>();
+            services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,6 +47,8 @@ namespace TreeAppGym.App.Frontend
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

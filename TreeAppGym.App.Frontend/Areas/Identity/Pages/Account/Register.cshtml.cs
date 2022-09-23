@@ -26,7 +26,6 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
 
-        //private readonly IRepositorioCliente _repoCliente;
         private readonly IRepositorioCliente _repoCliente = new RepositorioCliente(new Persistencia.AppContext());
 
         public RegisterModel(
@@ -40,6 +39,8 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
             _logger = logger;
             _emailSender = emailSender;
         }
+
+
 
         [BindProperty]
         public InputModel Input { get; set; }
@@ -59,16 +60,18 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
             public string Email { get; set; }
 
             [Required]
-            [StringLength(100, ErrorMessage = "The {0} must be at least {2} and at max {1} characters long.", MinimumLength = 6)]
+            [StringLength(100, ErrorMessage = "El {0} debe ser como mínimo {2} y máximo {1} caracteres de longitud.", MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
             public string Password { get; set; }
 
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
+            [Compare("Password", ErrorMessage = "El password y la confimación de password no coinciden.")]
             public string ConfirmPassword { get; set; }
         }
+
+
 
         public async Task OnGetAsync(string returnUrl = null)
         {
@@ -84,7 +87,8 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
+                //var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
+                var user = new IdentityUser { UserName = cliente.Nombres, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
@@ -121,4 +125,12 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
             return Page();
         }
     }
+
+    public enum Genero
+    {
+        Masculino,
+        Femenino,
+        Otro
+    }
+
 }

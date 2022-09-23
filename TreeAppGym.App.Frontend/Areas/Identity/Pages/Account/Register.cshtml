@@ -1,97 +1,105 @@
 @page
 @model RegisterModel
 @{
-    ViewData["Title"] = "Register";
+    ViewData["Title"] = "Registro";
 }
+<div class="gym_contenido">
+    
+        <div class="gym_contenido_registro">
 
-<h1>@ViewData["Title"]</h1>
+            <div class="gym_formulario">
 
-<div class="row">
-    <div class="col-md-4">
-        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
-            <h4>Create a new account.</h4>
-            <hr />
-            <div asp-validation-summary="All" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="cliente.Nombres"></label>
-                <input asp-for="cliente.Nombres" class="form-control" />
-                <span asp-validation-for="cliente.Nombres" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="cliente.Apellidos"></label>
-                <input asp-for="cliente.Apellidos" class="form-control" />
-                <span asp-validation-for="cliente.Apellidos" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="cliente.Genero"></label>
-                <input asp-for="cliente.Genero" class="form-control" />
-                <span asp-validation-for="cliente.Genero" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="cliente.Edad"></label>
-                <input asp-for="cliente.Edad" class="form-control" />
-                <span asp-validation-for="cliente.Edad" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="cliente.Direccion"></label>
-                <input asp-for="cliente.Direccion" class="form-control" />
-                <span asp-validation-for="cliente.Direccion" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="cliente.Telefono"></label>
-                <input asp-for="cliente.Telefono" class="form-control" />
-                <span asp-validation-for="cliente.Telefono" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Input.Email"></label>
-                <input asp-for="Input.Email" class="form-control" />
-                <span asp-validation-for="Input.Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Input.Password"></label>
-                <input asp-for="Input.Password" class="form-control" />
-                <span asp-validation-for="Input.Password" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Input.ConfirmPassword"></label>
-                <input asp-for="Input.ConfirmPassword" class="form-control" />
-                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-            </div>
-            <button type="submit" class="btn btn-primary">Register</button>
-        </form>
-    </div>
-    <div class="col-md-6 col-md-offset-2">
-        <section>
-            <h4>Use another service to register.</h4>
-            <hr />
-            @{
-                if ((Model.ExternalLogins?.Count ?? 0) == 0)
-                {
-                    <div>
-                        <p>
-                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
-                            for details on setting up this ASP.NET application to support logging in via external services.
-                        </p>
-                    </div>
-                }
-                else
-                {
-                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
-                        <div>
-                            <p>
-                                @foreach (var provider in Model.ExternalLogins)
-                                {
-                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
-                                }
-                            </p>
+                <div class="gym_textoEncabezado">Para registrarte en nuestra plataforma debes llenar el siguiente
+                    formulario. <br>(Los campos con * son obligatorios)<p><p><p></div>
+
+                <div>
+                    <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+                        <div class="gym_espacio_campos">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="gym_label_table">Nombre*</td>
+                                            <td class="gym_zona_campo">
+                                                <input asp-for="cliente.Nombres" class="gym_campo_table" type="text" size="40px" maxlength="50">
+                                                <span class="text-danger" asp-validation-for="cliente.Nombres"></span>
+                                            </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Apellidos*</td>
+                                        <td class="gym_zona_campo">
+                                            <input  asp-for="cliente.Apellidos" class="gym_campo_table" type="text" size="40px" maxlength="50">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Genero*</td>
+                                        <td class="gym_zona_campo">
+                                             <!-- <input  asp-for="cliente.Genero" class="gym_campo_table" type="text"> -->
+                                        <select asp-for="cliente.Genero" 
+                                                asp-items="Html.GetEnumSelectList<Genero>()" >
+                                                        <option>Select type ...</option>
+                                        </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Edad*</td>
+                                        <td class="gym_zona_campo">
+                                            <input  asp-for="cliente.Edad" class="gym_campo_table" type="text" size="15px" maxlength="3">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Dirección</td>
+                                        <td class="gym_zona_campo">
+                                            <input  asp-for="cliente.Direccion" class="gym_campo_table" type="text" size="40px" maxlength="50">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Celular</td>
+                                        <td class="gym_zona_campo">
+                                            <input  asp-for="cliente.Telefono" class="gym_campo_table" type="text" size="20px" maxlength="20">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Email</td>
+                                        <td class="gym_zona_campo">
+                                            <input  asp-for="Input.Email" class="gym_campo_table" type="text" size="20px" maxlength="20">
+                                            <span asp-validation-for="Input.Email" class="text-danger"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Contraseña</td>
+                                        <td class="gym_zona_campo">
+                                            <input  asp-for="Input.Password" class="gym_campo_table" type="text" size="20px" maxlength="20">
+                                            <span asp-validation-for="Input.Password" class="text-danger"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table">Confirmar Contraseña</td>
+                                        <td class="gym_zona_campo">
+                                            <input  asp-for="Input.ConfirmPassword" class="gym_campo_table" type="text" size="20px" maxlength="20">
+                                            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table"></td>
+                                        <td class="gym_zona_campo">
+                                            <p></p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="gym_label_table"></td>
+                                        <td class="gym_zona_campo">
+                                            <input type="submit" class="gym_boton" value="Enviar datos">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </form>
-                }
-            }
-        </section>
-    </div>
+                </div>
+            </div>
+        </div>
+    
 </div>
-
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }

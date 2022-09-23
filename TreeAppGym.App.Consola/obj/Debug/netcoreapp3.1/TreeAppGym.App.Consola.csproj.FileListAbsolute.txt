@@ -195,8 +195,6 @@ C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\bin\Debug\netcoreapp3.
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\bin\Debug\netcoreapp3.1\TreeAppGym.App.Persistencia.dll
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\bin\Debug\netcoreapp3.1\TreeAppGym.App.Persistencia.pdb
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\bin\Debug\netcoreapp3.1\TreeAppGym.App.Dominio.pdb
-C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\obj\Debug\netcoreapp3.1\TreeAppGym.App.Consola.csproj.AssemblyReference.cache
-C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\obj\Debug\netcoreapp3.1\TreeAppGym.App.Consola.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\obj\Debug\netcoreapp3.1\TreeAppGym.App.Consola.AssemblyInfoInputs.cache
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\obj\Debug\netcoreapp3.1\TreeAppGym.App.Consola.AssemblyInfo.cs
 C:\Users\marga\dllo\net\TreeAppGym\TreeAppGym.App.Consola\obj\Debug\netcoreapp3.1\TreeAppGym.App.Consola.csproj.CoreCompileInputs.cache

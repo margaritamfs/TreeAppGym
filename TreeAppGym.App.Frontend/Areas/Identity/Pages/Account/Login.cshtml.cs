@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using System.Security.Claims;
 
 namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
 {
@@ -83,6 +84,10 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in.");
+                    //ClaimsPrincipal principal = User.ClaimsPrincipal;  
+                    MyClaimsTransformation myClaims = new MyClaimsTransformation();
+                    //myClaims.TransformAsync(User.Claims);
+                    myClaims.TransformAsync(HttpContext.User);
                     return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)
@@ -105,4 +110,22 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
             return Page();
         }
     }
+
+
+    public class MyClaimsTransformation : IClaimsTransformation
+    {
+        public Task<ClaimsPrincipal> TransformAsync(ClaimsPrincipal principal)
+        {
+            ClaimsIdentity claimsIdentity = new ClaimsIdentity();
+            var claimType = "nombre";
+            if (!principal.HasClaim(claim => claim.Type == claimType))
+            {
+                claimsIdentity.AddClaim(new Claim(claimType, "Margarita"));
+            }
+
+            principal.AddIdentity(claimsIdentity);
+            return Task.FromResult(principal);
+        }
+    }
+
 }

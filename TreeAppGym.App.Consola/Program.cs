@@ -17,6 +17,15 @@ namespace TreeAppGym.App.Consola
             //CRUD Clase Cliente
             var cliente = crearCliente();
             Console.WriteLine("Cliente Creado..");
+            Console.WriteLine("Genero.."+(Genero)0);
+            Console.WriteLine("Genero.."+Genero.masculino);
+
+            foreach (int i in Enum.GetValues(typeof(Genero)))  
+            {  
+            Console.WriteLine($" {(Genero)i}" );  
+            }  
+
+
            // ConsultarCliente(cliente.Id);
            //ConsultarClientes();
            // ActualizarCliente(cliente);
@@ -41,12 +50,10 @@ namespace TreeAppGym.App.Consola
             {
                 Nombres = "Nario",
                 Apellidos = "Quintana",
-                Email = "Nario.Quintana@test.com00",
                 Edad = 25,
                 Telefono = "3043043041",
                 Direccion = "Av Regional #13-33",
-                Contraseña = "a123&1",
-                Genero = Genero.masculino
+                Genero = (Genero)0
                 
             };
             return _repoCliente.CrearCliente(cliente);
@@ -80,11 +87,9 @@ namespace TreeAppGym.App.Consola
                 Id = cliente.Id,
                 Nombres = "Luisa",
                 Apellidos = "Soler",
-                Email = "luisa.soler@test.com00",
                 Edad = 26,
                 Telefono = "3023023021",
                 Direccion = "Av Regional #12-34",
-                Contraseña = "a123&1",
                 Genero = Genero.femenino
                 
             };

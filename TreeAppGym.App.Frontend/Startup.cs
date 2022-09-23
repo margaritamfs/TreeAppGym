@@ -8,7 +8,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 using TreeAppGym.App.Persistencia;
+using TreeAppGym.App.Frontend.Areas.Identity.Pages.Account;
 
 namespace TreeAppGym.App.Frontend
 {
@@ -27,6 +30,7 @@ namespace TreeAppGym.App.Frontend
             services.AddRazorPages();
             services.AddDbContext<TreeAppGym.App.Persistencia.AppContext>();
             services.AddControllersWithViews();
+            services.AddScoped<IClaimsTransformation, MyClaimsTransformation>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

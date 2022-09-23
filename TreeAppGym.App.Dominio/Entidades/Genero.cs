@@ -1,9 +1,11 @@
+using System.Runtime.Serialization;
 namespace TreeAppGym.App.Dominio
 {
     public enum Genero
     {
-        masculino,
-        femenino
+        Masculino,
+        Femenino,
+        Otro
     }
 
 }

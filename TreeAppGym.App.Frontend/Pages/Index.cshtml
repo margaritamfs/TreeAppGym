@@ -4,33 +4,30 @@
     ViewData["Title"] = "Home page";
 }
 
+
+@if (User.Identity.IsAuthenticated)  
+{  
+   <table>
+   @foreach (var claim in User.Claims)  
+   {  
+       <tr>
+        <td>@claim.Type</td>
+        <td>@claim.Value</td>
+      </tr>
+   }  
+   </table>
+
+}
+
 <div class="gym_contenido">
-    <div class="gym_contenido_logeo">
+    <div class="gym_contenido_logeo_2">
         <div class="gym_zona_logeo">
             <div class="gym_titulo_logeo">BIENVENIDO A GYM HOUSE</div>
         <div>
             <p></p>
-        <div class="gym_zona_logeo">
-	        <table width="50%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                    <td class="gym_label_table">E_mail</td>
-                    <td class="gym_zona_campo"><input class="gym_campo_table" type="text" size="40px" maxlength="50"></td>
-                </tr>
-                <tr>
-                    <td class="gym_label_table">Contraseña</td>
-                    <td class="gym_zona_campo"><input class="gym_campo_table" type="text" size="40px" maxlength="50"></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center"><p>¿Olvido su contraseña?</p></p></td>
-                </tr>
-                <tr>
-                    <td style="width: 50%;"><input class="gym_boton" type="button" value="Ingresar"></td>
-                    <td style="width: 50%;"><input class="gym_boton" type="button" value="Registrate"></td>
-                </tr>
-                <tr>
-                    <td colspan="2" style="text-align: center"><p></p></td>
-                </tr>
-            </table>
+        <div class="gym_bienvenido_centro">
+	       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<P></P>
+           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
         </div>
     </div>
 </div>

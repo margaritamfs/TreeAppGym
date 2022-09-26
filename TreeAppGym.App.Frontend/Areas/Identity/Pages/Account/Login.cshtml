@@ -10,9 +10,10 @@
         <div class="gym_zona_logeo">
             <div class="gym_titulo_logeo">BIENVENIDO A GYM HOUSE</div>
         <div>
-            <p></p>
+            <p>
         <div class="gym_zona_logeo">
             <form id="account" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
 	        <table width="50%" border="0" cellspacing="0" cellpadding="0">
                 <tr>
                     <td class="gym_label_table">E_mail</td>
@@ -24,14 +25,13 @@
                 </tr> 
                 <tr>
                     <td colspan="2" style="text-align: center">
-                        <a id="forgot-password" asp-page="./ForgotPassword">¿Olvido su contraseña?</a>
+                        <a class="gym_olvido_contrasena" id="forgot-password" asp-page="./ForgotPassword">¿Olvido su contraseña?<p></p></a>
                     </td>
                 </tr>
                 <tr>
-                    <td style="width: 50%;">
-                        <input type="submit" class="gym_boton" value="Ingresar"></td>
-                    <td style="width: 50%;">
-                        <a class="gym_boton" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Regístrate</a>
+                    <td colspan="2" style="text-align: center" class="gym_bton_logeo2">
+                        <div class="gym_boton_inicio_1"><input class="gym_boton_inicio_a" type="submit" value="Ingresar"></div>
+                        <div class="gym_boton_inicio_2"><a class="gym_boton_registrate" asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Regístrate</a></div>
                     </td>
                 </tr>
                 <tr>

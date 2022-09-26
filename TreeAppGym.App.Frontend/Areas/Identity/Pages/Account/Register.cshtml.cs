@@ -54,12 +54,12 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
+            [Required(ErrorMessage = "El campo Email es requerido")]
             [EmailAddress]
             [Display(Name = "Email")]
             public string Email { get; set; }
 
-            [Required]
+            [Required(ErrorMessage = "El campo Contraseña es requerido")]
             [StringLength(100, ErrorMessage = "El {0} debe ser como mínimo {2} y máximo {1} caracteres de longitud.", MinimumLength = 6)]
             [DataType(DataType.Password)]
             [Display(Name = "Password")]
@@ -67,7 +67,7 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
 
             [DataType(DataType.Password)]
             [Display(Name = "Confirm password")]
-            [Compare("Password", ErrorMessage = "El password y la confimación de password no coinciden.")]
+            [Compare("Password", ErrorMessage = "La contraseña y la confimación de contraseña no coinciden.")]
             public string ConfirmPassword { get; set; }
         }
 
@@ -82,18 +82,18 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-            _repoCliente.CrearCliente(cliente);
+            
             returnUrl = returnUrl ?? Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
-                //var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
-                var user = new IdentityUser { UserName = cliente.Nombres, Email = Input.Email };
+                var user = new IdentityUser { UserName = Input.Email, Email = Input.Email };
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User created a new account with password.");
-
+                    // se crea el cliente en la base de datos propia
+                    _repoCliente.CrearCliente(cliente);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(

@@ -43,11 +43,11 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
+            [Required(ErrorMessage = "El campo es requerido")]
             [EmailAddress]
             public string Email { get; set; }
 
-            [Required]
+            [Required(ErrorMessage = "El campo es requerido")]
             [DataType(DataType.Password)]
             public string Password { get; set; }
 
@@ -101,7 +101,7 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
                 }
                 else
                 {
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
+                    ModelState.AddModelError(string.Empty, "Intento de ingreso inválido(no has confirmado tu cuenta o las credenciales no son correctas).");
                     return Page();
                 }
             }

@@ -13,7 +13,7 @@ namespace TreeAppGym.App.Persistencia
         if (!optionsBuilder.IsConfigured)
         {
             //string conexión nube
-            // optionsBuilder.UseSqlServer("Data Source=SQL8002.site4now.net;Initial Catalog=db_a8d1c4_gymhouse;User Id=db_a8d1c4_gymhouse_admin;Password=qazwsx0101");
+            //optionsBuilder.UseSqlServer("Data Source=SQL8002.site4now.net;Initial Catalog=db_a8d1c4_gymhouse;User Id=db_a8d1c4_gymhouse_admin;Password=qazwsx0101");
             //string conexión local
             optionsBuilder.UseSqlServer("Data Source = (localdb)\\MSSQLLocalDB; Initial Catalog=Gimnasio");
         }

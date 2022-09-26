@@ -3,26 +3,73 @@
 @{
 }
 <div class="gym_contenido">
-    <div>
-    <span class="gym_titulo_logeo">ELEGIR RUTINA</span><p></p><span class="gym_textcentrado">Antes de comenzar, queremos saber mas de ti y así aconsejarte las mejores rutinas<br>
-de acuerdo a tus objetivos. Por eso te invitamos a comlpetar los siguietes campos.<p><p></span><span class="gym_text_border">Recuerda siempre que debes estar asesorado por profesionales en el tema y nuestras rutinas se<br>
-basan únicamente en la información suministrada por ti y los estándares que se usan habitualmente. </span>
-    </div>
-    <div>
-        <table width="60%" border="0" cellspacing="10" cellpadding="0">
+    
+    <div class="gym_rutina_principal">
+        
+        <div class="gym_titulo_logeo">ELEGIR RUTINA</div>
+
+        <div class="gym_textcentrado">
+        Antes de comenzar, queremos saber mas de ti y así aconsejarte las mejores rutinas 
+        de acuerdo a tus objetivos. <br>Por eso te invitamos a comlpetar los siguietes campos.
+        </div>
+
+        <div class="gym_text_border">
+        Recuerda siempre que debes estar asesorado por profesionales en el tema y nuestras rutinas se<br>
+        basan únicamente en la información suministrada por ti y los estándares que se usan habitualmente.
+        </div>
+
+        <div class="gym_campos_peso">
+            <table width="60%" border="0" cellspacing="10" cellpadding="0">
             <tbody>
                 <tr>
                     <td>Tu peso (Kl)</td>
+                    <td>&nbsp;&nbsp;</td>
                     <td>Tu estatura (cm)</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
                     <td><input class="gym_campo_table" type="text" required="required" size="10px" maxlength="10"></td>
-                    <td><input class="gym_campo_table" type="text" required="required" size="50px" maxlength="10"></td>
+                    <td>&nbsp;&nbsp;</td>
+                    <td><input class="gym_campo_table" type="text" required="required" size="10px" maxlength="10"></td>
                     <td><input class="gym_boton" type="submit" value="Enviar"></td>
                 </tr>
             </tbody>
-        </table>
+            </table>
+        </div>
+
+        <div class="gym_textcentrado">
+        De acuedo a tu peso, a tu talla y a tu genero, te sugerimos el siguiente programa:
+        </div>
+
+        <div class="gym_text_border">
+        Puedes seleccionar sólo rutina de ejercicios, sólo plan nutricional o ambos.
+        </div>
+
+        <div>
+            <div class="gym_rutina_sugerida">
+                <div class="gym_rutina_titulo"><span>&nbsp;&nbsp;&nbsp;</span><input type="checkbox">&nbsp;&nbsp;&nbsp;rutina de rjercicios sugerida</div>
+                <div class="gym_rutina_contenido">
+                    <span><br>Plan Básico<br><br></span>
+                    <span>Plan Intermedio<br><br></span>
+                    <span>Plan Avanzado</span>
+                </div>
+            </div>
+
+            <div class="gym_nutricio_sugerida">
+                <div class="gym_rutina_titulo"><span>&nbsp;&nbsp;&nbsp;</span><input type="checkbox">&nbsp;&nbsp;&nbsp;plan nutricional sugerido</div>
+                <div class="gym_rutina_contenido">
+                    <span><br>Plan Definición<br><br></span>
+                    <span>Plan Disminución de peso<br><br></span>
+                    <span>Plan aumento de masa corporal</span>
+                </div>
+            </div>
+
+            <div class="gym_centrar"><input class="gym_boton" type="submit" value="Comenzar plan"></div>
+        </div>
+
+
     </div>
+    
+ 
 
 </div>

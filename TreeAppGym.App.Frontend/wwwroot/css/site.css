@@ -172,11 +172,24 @@ a:active.gym_vinculo{
 	padding-right: 30px;
 	border: #b4c0cc;
 	border: 1px solid;
+	margin: 5px;
 }
 
 .gym_contenido_logeo{
 	padding-top: 80px;
 	background-image: url("../img/img_logeo.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin: auto;
+	height: 500px;
+	overflow-y: auto;
+	padding-bottom: 30px;
+}
+
+.gym_contenido_logeo_2{
+	padding-top: 80px;
+	background-image: url("../img/img_logeo_2.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 100%;
@@ -232,17 +245,6 @@ a:active.gym_vinculo{
 	padding-bottom: 80px;
 }
 
-.gym_textcentrado{
-	text-align: center;
-}
-
-.gym_text_border{
-	border: 1px #b4c0cc;
-	padding: 7px;
-	text-align: center;
-	margin: 15px;
-}
-
 .gym_espacio_mamon{
 	padding-right: 20px;
 	padding-top: 20px;
@@ -293,3 +295,131 @@ a:hover.gym_vinculo_quienes{
 	text-decoration: none;
 }
 
+.gym_olvido_contrasena{
+	color: #0387f4;
+	text-decoration: none;
+	padding-left: 50px;
+}
+
+.gym_bton_logeo2{
+	padding-left: 100px;
+}
+
+.gym_boton_registrate{
+ color: #FFF;
+}
+
+a:hover.gym_boton_registrate{
+	text-decoration: none;
+	color: #000;
+}
+
+.gym_boton_inicio_2{
+	width: 40%;
+	float: left;
+	height: 37px;
+	background-color: #5e5f72;
+	padding-top: 8px;
+	color: #FFF;
+	border: 1px;
+	border-color: #000;
+}
+
+.gym_boton_inicio_1{
+	width: 40%;
+	float: left;
+	height: 37px;
+	background-color: #5e5f72;
+	padding-top: 8px;
+	color: #FFF;
+	border: 1px;
+	border-color: #000;
+	margin-right: 5px;
+}
+
+.gym_boton_inicio_a{
+	background-color: transparent;
+	color: #FFF;
+	border: 0px;
+	border-color: transparent;
+}
+
+a:hover.gym_boton_inicio_a{
+	background-color: transparent;
+	color: #000;
+}
+
+.gym_bienvenido_centro{
+	padding: 30px;
+	text-align: justify;
+}
+
+.gym_rutina_principal{
+	width: 80%;
+	margin: auto;
+	padding-top: 30px;
+}
+
+.gym_textcentrado{
+	text-align: center;
+	margin: auto;
+}
+
+.gym_text_border{
+	border: 10px;
+	border-color: rgb(137, 48, 48);
+	padding: 7px;
+	text-align: center;
+	color: #b4c0cc;
+	margin: auto;
+	margin-top: 20px;
+	font-size: 12;
+	margin-bottom: 30px;
+	background-color: #f5f7d2;
+}
+
+.gym_campos_peso{
+	width: 380px;
+	margin: auto;
+	margin-bottom: 40px;
+}
+
+.gym_rutina_sugerida{
+	width: 49%;
+	float: left;
+	background-color: #b4c0cc;
+	height: 200px;
+	margin-bottom: 20px;
+	padding: 2px;
+}
+
+.gym_nutricio_sugerida{
+	width: 49%;
+	float: right;
+	background-color: #b4c0cc;
+	height: 200px;
+	margin-bottom: 20px;
+	padding: 2px;
+}
+
+.gym_rutina_titulo{
+	background-color: #FFF;
+	padding: 3px;
+	color: #000;
+	text-align: left;
+	font-variant: small-caps;
+	font-size: 20px;
+}
+
+.gym_rutina_contenido{
+	width: 80%;
+	margin: auto;
+	padding-left: 20px;
+	font-size: 15px;
+}
+
+.gym_centrar{
+	margin: auto;
+	padding: 10px;
+	width: 20%;
+}

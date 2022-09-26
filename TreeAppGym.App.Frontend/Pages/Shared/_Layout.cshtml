@@ -15,18 +15,12 @@
         <div class="gym_encabezado">
             <div class="gym_logo"></div>
             <div class="gym_menu">
-                <partial name="_LoginPartial" />
-                <div class="gym_bienvenida">BIENVENIDA MARGARITA FORERO<br>¡Ya queremos verte en forma!</div>
-                <div class="gym_menu_ppal"><a class="gym_vinculo" asp-area="" asp-page="/Shared/Index">Inicio</a> &nbsp;&nbsp;<spam class="gym_bold">I</spam>&nbsp;&nbsp;<a class="gym_vinculo" asp-area="" asp-page="/General/QuienesSomos">Conoce de que se trata</a> &nbsp;&nbsp;<spam class="gym_bold">I</spam>&nbsp;&nbsp;<a
-                        class="gym_vinculo" asp-area="" asp-page="/Clientes/Registro">REGISTRATE AQUI</a> &nbsp;&nbsp;<spam class="gym_bold">I</spam>&nbsp;&nbsp; <a class="gym_vinculo" asp-area="" asp-page="/Rutinas/Asignar">Elegir
-                        rutina</a> &nbsp;&nbsp;<spam class="gym_bold">I</spam>&nbsp;&nbsp; <a class="gym_vinculo">Tu plan</a>
-                    &nbsp;&nbsp;<spam class="gym_bold">I</spam>&nbsp;&nbsp; <a class="gym_vinculo">Tus logros</a> &nbsp;&nbsp;<spam class="gym_bold">I</spam>&nbsp;&nbsp; <a
-                        class="gym_vinculo">Salir</a> </div>
+                <partial name="_LoginPartial"/>
             </div>
         </div>
     </header>
     <div>
-        <main role="main" class="pb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>

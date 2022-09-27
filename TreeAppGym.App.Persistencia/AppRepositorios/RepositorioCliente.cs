@@ -1,3 +1,4 @@
+using System;
 using TreeAppGym.App.Dominio;
 using System.Linq;
 using System.Collections.Generic;
@@ -29,6 +30,13 @@ namespace TreeAppGym.App.Persistencia
 
         }
 
+        public Cliente ConsultarClientePorEmail(string email)
+        {
+            Console.WriteLine("email.."+email);
+            return _appContext.Clientes.FirstOrDefault(c => c.Email == email);
+
+        }
+
         public IEnumerable<Cliente> ConsultarClientes()
         {
             return _appContext.Clientes;
@@ -42,11 +50,9 @@ namespace TreeAppGym.App.Persistencia
             {
                 clienteEncontrado.Nombres = cliente.Nombres;
                 clienteEncontrado.Apellidos = cliente.Apellidos;
-                //clienteEncontrado.Email = cliente.Email;
                 clienteEncontrado.Edad = cliente.Edad;
                 clienteEncontrado.Telefono = cliente.Telefono;
                 clienteEncontrado.Direccion = cliente.Direccion;
-                //clienteEncontrado.Contraseña = cliente.Contraseña;
                 clienteEncontrado.Genero = cliente.Genero;
                 _appContext.SaveChanges();
             }
@@ -61,6 +67,15 @@ namespace TreeAppGym.App.Persistencia
                 return;
             _appContext.Clientes.Remove(clienteEncontrado);
             _appContext.SaveChanges();
+        }
+
+        public string ConsultarNombrePorEmail(string email)
+        {
+            var clienteEncontrado = _appContext.Clientes.FirstOrDefault(c => c.Email == email);
+            if (clienteEncontrado == null)
+              return "Gym "+email;
+            else
+             return clienteEncontrado.Nombres + " " + clienteEncontrado.Apellidos;
         }
 
     }

@@ -1,5 +1,5 @@
 ﻿@page
-@model TreeAppGym.App.Frontend.Pages.RegistroModel
+@model TreeAppGym.App.Frontend.Pages.EditModel
 @{
 }
 <div class="gym_contenido">
@@ -8,11 +8,12 @@
 
             <div class="gym_formulario">
 
-                <div class="gym_textoEncabezado">Para registrarte en nuestra plataforma debes llenar el siguiente
-                    formulario. <br>(Los campos con * son obligatorios)<p><p><p></div>
+                <div class="gym_textoEncabezado">Hola @Model.Cliente.Nombres @Model.Cliente.Apellidos, acá puedes 
+                    actualizar tus datos <br>(Los campos con * son obligatorios)<p><p><p></div>
 
                 <div>
                     <form method="post">
+                        <input type="hidden" asp-for="Cliente.Id" />
                         <div class="gym_espacio_campos">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tbody>
@@ -41,7 +42,7 @@
                                     </tr>
 
                                     <tr>
-                                        <td class="gym_label_table"></td><td class="gym_zona_campo"><input type="submit" class="gym_boton" value="Enviar datos"></td>
+                                        <td class="gym_label_table"></td><td class="gym_zona_campo"><input type="submit" class="gym_boton" value="Actualizar"></td>
                                     </tr>
                                 </tbody>
                             </table>

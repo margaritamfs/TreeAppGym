@@ -11,6 +11,8 @@ namespace TreeAppGym.App.Dominio
       public string Apellidos {get; set;}
       [Required(ErrorMessage = "El campo Edad es requerido")]
       public int Edad {get; set;}
+      [Required(ErrorMessage = "El campo Email es requerido")]
+      public string Email{get; set;}
       public string Telefono {get; set;}
       public string Direccion {get; set;}
       public Genero Genero {get; set;}

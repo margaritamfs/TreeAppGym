@@ -14,7 +14,10 @@ namespace TreeAppGym.App.Persistencia{
         Cliente ActualizarCliente(Cliente cliente);
 
         void EliminarCliente(int idCliente);
-        
+
+        string ConsultarNombrePorEmail(string email);    
+
+        Cliente ConsultarClientePorEmail(string email);    
     }
 
 

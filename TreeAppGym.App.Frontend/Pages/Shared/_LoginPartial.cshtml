@@ -1,24 +1,27 @@
 @using Microsoft.AspNetCore.Identity
+@using TreeAppGym.App.Dominio;
+@using TreeAppGym.App.Persistencia;
 @inject SignInManager<IdentityUser> SignInManager
 @inject UserManager<IdentityUser> UserManager
+@inject IRepositorioCliente _repoCliente;
 
 <div class="gym_espacio_mamon">
 @if (SignInManager.IsSignedIn(User))
-
 {
+        string NombreCliente = _repoCliente.ConsultarNombrePorEmail(UserManager.GetUserName(User));
         <div class="gym_menu_ppal">
 
                 <div class="gym_bienvenida">
-                 <a class="gym_text_bienvenida" id="manage" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Bienvenido(a): @UserManager.GetUserName(User).</a>&nbsp;&nbsp;¡Ya queremos verte en forma!
+                 <a class="gym_text_bienvenida" id="manage" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Bienvenido(a): @NombreCliente.</a>&nbsp;&nbsp;¡Ya queremos verte en forma!
                 </div>
 
                 <div class="gym_menu_ppal">
                  <form id="logoutForm" asp-area="Identity" asp-page="/Account/Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
                  <a class="gym_vinculo" asp-area="" asp-page="/General/QuienesSomos">De que se trata</a><spam class="gym_bold">&nbsp;&nbsp;I&nbsp;&nbsp;</spam>
                  <a class="gym_vinculo" asp-area="" asp-page="/Rutinas/Asignar">Elegir rutina</a><spam class="gym_bold">&nbsp;&nbsp;I&nbsp;&nbsp;</spam>
-                 <a class="gym_vinculo">Tu plan</a><spam class="gym_bold">&nbsp;&nbsp;I&nbsp;&nbsp;</spam>
-                 <a class="gym_vinculo">Tus logros</a><spam class="gym_bold">&nbsp;&nbsp;I&nbsp;&nbsp;</spam>
-                 <a class="gym_vinculo">Tu perfil</a><spam class="gym_bold">&nbsp;&nbsp;I</spam>
+                 <a class="gym_vinculo" asp-area="" asp-page="/Planes/Consultar">Tu plan</a><spam class="gym_bold">&nbsp;&nbsp;I&nbsp;&nbsp;</spam>
+                 <a class="gym_vinculo" asp-area="" asp-page="/Rutinas/Logros">Tus logros</a><spam class="gym_bold">&nbsp;&nbsp;I&nbsp;&nbsp;</spam>
+                 <a class="gym_vinculo" asp-area="" asp-page="/Clientes/Edit" asp-route-userName="@UserManager.GetUserName(User)">Tu perfil</a><spam class="gym_bold">&nbsp;&nbsp;I</spam>
                  <button class="gym_boton_salir" id="logout" type="submit">Salir</button>
                  </form>
                 </div>

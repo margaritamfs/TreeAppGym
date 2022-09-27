@@ -12,7 +12,7 @@ namespace TreeAppGym.App.Persistencia{
 
         Rutina ConsultarRutina(int idRutina);
         // aqui quiero que me retorne todas las listas de planes nutricionales
-        IEnumerable<Rutina> ConsultarRutina();
+        IEnumerable<Rutina> ConsultarRutinas();
         
         Rutina ActualizarRutina(Rutina Rutina);
 

@@ -30,7 +30,7 @@ namespace TreeAppGym.App.Frontend
             services.AddRazorPages();
             services.AddDbContext<TreeAppGym.App.Persistencia.AppContext>();
             services.AddControllersWithViews();
-            services.AddScoped<IClaimsTransformation, MyClaimsTransformation>();
+            services.AddScoped<IRepositorioCliente, RepositorioCliente>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

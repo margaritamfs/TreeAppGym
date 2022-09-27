@@ -31,7 +31,7 @@ namespace TreeAppGym.App.Persistencia
         
         }
 
-        public IEnumerable<PlanNutricional> ConsultarPlanNutricional()
+        public IEnumerable<PlanNutricional> ConsultarPlanNutricionales()
         {
             return _appContext.PlanNutricional;
         }

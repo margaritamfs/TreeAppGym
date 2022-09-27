@@ -92,7 +92,7 @@ a:active.gym_vinculo{
 	background-position: left;
 	background-repeat: no-repeat;
 	margin: auto;
-	height: 750px;
+	height: 800px;
 	overflow-y: auto;
 	padding-bottom: 30px;
 }
@@ -423,3 +423,22 @@ a:hover.gym_boton_inicio_a{
 	padding: 10px;
 	width: 20%;
 }
+
+.gym_carpeta_ejercicios{
+	width: 100%;
+	margin: auto;
+	background-color: #dae0e6;
+}
+
+.gym_tabla_datos{
+	padding: 20px;
+	margin-top: 20px;
+}
+
+.gym_center{
+	text-align: center;
+	color: #FFF;
+}
+
+.gym_centradito{
+	text-align: center;}

@@ -12,6 +12,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 using System.Security.Claims;
+using TreeAppGym.App.Dominio;
+using TreeAppGym.App.Persistencia;
 
 namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
 {
@@ -21,6 +23,11 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        //private readonly MyClaimsTransformation _myClaims = new MyClaimsTransformation();
+
+        private readonly IRepositorioCliente _repoCliente = new RepositorioCliente(new Persistencia.AppContext());
+
+        
 
         public LoginModel(SignInManager<IdentityUser> signInManager, 
             ILogger<LoginModel> logger,
@@ -83,11 +90,13 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
-                    _logger.LogInformation("User logged in.");
-                    //ClaimsPrincipal principal = User.ClaimsPrincipal;  
-                    MyClaimsTransformation myClaims = new MyClaimsTransformation();
-                    //myClaims.TransformAsync(User.Claims);
-                    myClaims.TransformAsync(HttpContext.User);
+                    _logger.LogInformation("User logged in."); 
+                    //MyClaimsTransformation myClaims = new MyClaimsTransformation();
+                    _logger.LogInformation("Input.Email "+Input.Email);
+                    //var nombreCompleto =_repoCliente.ConsultarNombrePorEmail(Input.Email);
+                    //_myClaims.Nombres = nombreCompleto;
+                    //_logger.LogInformation(" myClaims.mail "+ myClaims.mail);
+                    //await TransformAsync(HttpContext.User);
                     return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)
@@ -109,23 +118,8 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
             // If we got this far, something failed, redisplay form
             return Page();
         }
+
+       
+
     }
-
-
-    public class MyClaimsTransformation : IClaimsTransformation
-    {
-        public Task<ClaimsPrincipal> TransformAsync(ClaimsPrincipal principal)
-        {
-            ClaimsIdentity claimsIdentity = new ClaimsIdentity();
-            var claimType = "nombre";
-            if (!principal.HasClaim(claim => claim.Type == claimType))
-            {
-                claimsIdentity.AddClaim(new Claim(claimType, "Margarita"));
-            }
-
-            principal.AddIdentity(claimsIdentity);
-            return Task.FromResult(principal);
-        }
-    }
-
 }

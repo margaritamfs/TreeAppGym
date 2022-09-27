@@ -12,7 +12,7 @@ namespace TreeAppGym.App.Persistencia{
 
         PlanNutricional ConsultarPlanNutricional(int idPlanNutricional);
         // aqui quiero que me retorne todas las listas de planes nutricionales
-        IEnumerable<PlanNutricional> ConsultarPlanNutricional();
+        IEnumerable<PlanNutricional> ConsultarPlanNutricionales();
         
         PlanNutricional ActualizarPlanNutricional(PlanNutricional PlanNutricional);
 

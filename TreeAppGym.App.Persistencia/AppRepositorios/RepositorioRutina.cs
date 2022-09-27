@@ -32,7 +32,7 @@ namespace TreeAppGym.App.Persistencia
             //doble == porque estoy comparando enteros
         }
 
-        public IEnumerable<Rutina> ConsultarRutina()
+        public IEnumerable<Rutina> ConsultarRutinas()
         {
             return _appContext.Rutinas;
         }

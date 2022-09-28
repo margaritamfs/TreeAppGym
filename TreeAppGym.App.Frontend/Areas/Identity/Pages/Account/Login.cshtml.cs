@@ -91,12 +91,7 @@ namespace TreeAppGym.App.Frontend.Areas.Identity.Pages.Account
                 if (result.Succeeded)
                 {
                     _logger.LogInformation("User logged in."); 
-                    //MyClaimsTransformation myClaims = new MyClaimsTransformation();
                     _logger.LogInformation("Input.Email "+Input.Email);
-                    //var nombreCompleto =_repoCliente.ConsultarNombrePorEmail(Input.Email);
-                    //_myClaims.Nombres = nombreCompleto;
-                    //_logger.LogInformation(" myClaims.mail "+ myClaims.mail);
-                    //await TransformAsync(HttpContext.User);
                     return LocalRedirect(returnUrl);
                 }
                 if (result.RequiresTwoFactor)

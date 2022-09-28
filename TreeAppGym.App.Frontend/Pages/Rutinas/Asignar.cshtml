@@ -17,55 +17,67 @@
         Recuerda siempre que debes estar asesorado por profesionales en el tema y nuestras rutinas se<br>
         basan únicamente en la información suministrada por ti y los estándares que se usan habitualmente.
         </div>
-
+        <form method="post">
         <div class="gym_campos_peso">
             <table width="60%" border="0" cellspacing="10" cellpadding="0">
             <tbody>
                 <tr>
-                    <td>Tu peso (Kl)</td>
+                    <td>Tu peso (kg)</td>
                     <td>&nbsp;&nbsp;</td>
                     <td>Tu estatura (cm)</td>
                     <td>&nbsp;</td>
                 </tr>
                 <tr>
-                    <td><input class="gym_campo_table" type="text" required="required" size="10px" maxlength="10"></td>
+                    <td><input asp-for="Atributos.Peso" class="gym_campo_table" type="text" required="required" size="10px" maxlength="10"></td>
                     <td>&nbsp;&nbsp;</td>
-                    <td><input class="gym_campo_table" type="text" required="required" size="10px" maxlength="10"></td>
+                    <td><input asp-for="Atributos.Estatura" class="gym_campo_table" type="text" required="required" size="10px" maxlength="10"></td>
                     <td><input class="gym_boton" type="submit" value="Enviar"></td>
                 </tr>
             </tbody>
             </table>
         </div>
-
+        </form> 
         <div class="gym_textcentrado">
         De acuedo a tu peso, a tu talla y a tu genero, te sugerimos el siguiente programa:
         </div>
 
-        <div class="gym_text_border">
-        Puedes seleccionar sólo rutina de ejercicios, sólo plan nutricional o ambos.
-        </div>
 
-        <div>
-            <div class="gym_rutina_sugerida">
-                <div class="gym_rutina_titulo"><span>&nbsp;&nbsp;&nbsp;</span><input type="checkbox">&nbsp;&nbsp;&nbsp;rutina de rjercicios sugerida</div>
-                <div class="gym_rutina_contenido">
-                    <span><br>Plan Básico<br><br></span>
-                    <span>Plan Intermedio<br><br></span>
-                    <span>Plan Avanzado</span>
-                </div>
+        @if (Model.RutinaSelected != null)
+        {
+            <div class="gym_text_border">
+            Puedes seleccionar sólo rutina de ejercicios, sólo plan nutricional o ambos.
             </div>
 
-            <div class="gym_nutricio_sugerida">
-                <div class="gym_rutina_titulo"><span>&nbsp;&nbsp;&nbsp;</span><input type="checkbox">&nbsp;&nbsp;&nbsp;plan nutricional sugerido</div>
-                <div class="gym_rutina_contenido">
-                    <span><br>Plan Definición<br><br></span>
-                    <span>Plan Disminución de peso<br><br></span>
-                    <span>Plan aumento de masa corporal</span>
+            <div>
+                <div class="gym_rutina_sugerida">
+                    <div class="gym_rutina_titulo"><span>&nbsp;&nbsp;&nbsp;</span><input type="checkbox">&nbsp;&nbsp;&nbsp;rutina de ejercicios sugerida</div>
+                    <div class="gym_rutina_contenido">
+                        @foreach (var rutina in Model.Rutinas)
+                        {
+                            @if (rutina.Id == Model.RutinaSelected.Id && Model.RutinaSelected.Selected){
+                                <span>RUTINA @rutina.Descripcion<br><br></span>
+                                <input type="hidden" asp-for="RutinaSelected.Id" />
+                            }else{
+                                <span>@rutina.Descripcion<br><br></span>
+                            }
+                            
+                        }
+                    </div>
                 </div>
-            </div>
 
-            <div class="gym_centrar"><input class="gym_boton" type="submit" value="Comenzar plan"></div>
-        </div>
+                <div class="gym_nutricio_sugerida">
+                    <div class="gym_rutina_titulo"><span>&nbsp;&nbsp;&nbsp;</span><input type="checkbox">&nbsp;&nbsp;&nbsp;plan nutricional sugerido</div>
+                    <div class="gym_rutina_contenido">
+                        @foreach (var nutricional in Model.Nutricionales)
+                        {
+                            <span>@nutricional.Descripcion<br><br></span>
+                        }
+                    </div>
+                </div>
+
+                <div class="gym_centrar"><input class="gym_boton" type="submit" value="Comenzar plan"></div>
+            </div>
+        }
 
 
     </div>
